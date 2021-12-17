@@ -3723,19 +3723,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Green Zone\\.nuget\\packages\\": {}
+    "C:\\Users\\GreenZone\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Green Zone\\Desktop\\Api_Barcode_Generator\\Api_Barcode_Generator\\Api_Barcode_Generator.csproj",
+      "projectUniqueName": "C:\\Users\\GreenZone\\Desktop\\WORK\\Projects\\Api_Barcode_Generator\\Api_Barcode_Generator\\Api_Barcode_Generator.csproj",
       "projectName": "Api_Barcode_Generator",
-      "projectPath": "C:\\Users\\Green Zone\\Desktop\\Api_Barcode_Generator\\Api_Barcode_Generator\\Api_Barcode_Generator.csproj",
-      "packagesPath": "C:\\Users\\Green Zone\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Green Zone\\Desktop\\Api_Barcode_Generator\\Api_Barcode_Generator\\obj\\",
+      "projectPath": "C:\\Users\\GreenZone\\Desktop\\WORK\\Projects\\Api_Barcode_Generator\\Api_Barcode_Generator\\Api_Barcode_Generator.csproj",
+      "packagesPath": "C:\\Users\\GreenZone\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\GreenZone\\Desktop\\WORK\\Projects\\Api_Barcode_Generator\\Api_Barcode_Generator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Green Zone\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\GreenZone\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3747,6 +3747,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -3758,6 +3759,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
@@ -3782,6 +3784,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.21, 3.1.21]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -3790,7 +3798,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

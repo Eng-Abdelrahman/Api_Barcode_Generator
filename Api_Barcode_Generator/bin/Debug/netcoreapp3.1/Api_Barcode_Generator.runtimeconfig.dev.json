@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Green Zone\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Green Zone\\.nuget\\packages"
+      "C:\\Users\\GreenZone\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\GreenZone\\.nuget\\packages"
     ]
   }
 }

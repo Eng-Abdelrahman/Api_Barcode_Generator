@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b92fcf19-810f-4d7e-9ebd-2d4087e748e2": {
+      "ProjectGuid": "b92fcf19-810f-4d7e-9ebd-2d4087e748e2",
+      "DisplayName": "Api_Barcode_Generator",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

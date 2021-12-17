@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using Api_Barcode_Generator.Model;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ZXing;
 
@@ -19,12 +21,12 @@ namespace WebApplication1.Controllers
 
 
         [Obsolete]
-        private readonly IHostingEnvironment hostingEnvironment;
+        private readonly IHostingEnvironment _hostingEnvironment;
 
         [Obsolete]
         public BarcodeController(IHostingEnvironment hostingEnvironment)
         {
-            this.hostingEnvironment = hostingEnvironment;
+            _hostingEnvironment = hostingEnvironment;
         }
 
 
@@ -49,10 +51,10 @@ namespace WebApplication1.Controllers
         {
             var barcodeWriterPixelData = new BarcodeWriterPixelData
             {
-                Format = BarcodeFormat.CODE_128,
+                Format = BarcodeFormat.QR_CODE,
                 Options = new ZXing.Common.EncodingOptions
                 {
-                    Height = 80,
+                    Height = 280,
                     Width = 280,
                     Margin = 2,
 
@@ -83,11 +85,10 @@ namespace WebApplication1.Controllers
         }
 
 
-
         [Obsolete]
         private void SaveBarcode(string ImageName, byte[] byteImage)
         {
-            string uploadsFolder = Path.Combine(hostingEnvironment.WebRootPath, "Images/Barcode");
+            string uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "Images");
 
             string fullimageName = ImageName + ".png";
 
@@ -95,7 +96,6 @@ namespace WebApplication1.Controllers
 
             System.IO.File.WriteAllBytes(filePath, byteImage);
         }
-
 
 
 
