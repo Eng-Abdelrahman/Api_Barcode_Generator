@@ -51,7 +51,7 @@ namespace WebApplication1.Controllers
         {
             var barcodeWriterPixelData = new BarcodeWriterPixelData
             {
-                Format = BarcodeFormat.QR_CODE,
+                Format = BarcodeFormat.CODE_128,
                 Options = new ZXing.Common.EncodingOptions
                 {
                     Height = 280,
